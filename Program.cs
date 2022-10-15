@@ -49,13 +49,11 @@ int EvenNumInArrayCount (int[] SomeArray)
 int GetSumOfUnevenPositions (int[] SomeArray)
 {
     int Sum = 0;
+    for (int i = 1; i < SomeArray.Length; i += 2)
     {
-        for (int i = 1; i < SomeArray.Length; i += 2)
-        {
-            Sum = Sum + SomeArray[i];
-        }
-        return Sum;
+        Sum = Sum + SomeArray[i];
     }
+    return Sum;
 }
 
 int FindMaxInArray (int[] SomeArray)
